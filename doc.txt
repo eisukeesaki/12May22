@@ -15,6 +15,7 @@ Tasks
     create endpoints
         POST /users
             OK: create new record in Table_Users
+            createUserByUsername
             reject requests that has a username value that matches the username value of a record Table_Users
         DELETE /users/:id
             destroy a record in Table_Users that has an PK that matches the request parameter
