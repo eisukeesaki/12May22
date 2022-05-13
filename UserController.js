@@ -41,6 +41,9 @@ module.exports = {
   },
 
   updateUserById(req, res) {
+    if (!req.body.username) {
+      return res.status(400).send({ message: "username not provided" });
+    }
     const idUserUpd = req.params.id;
     if (!db.Table_Users[idUserUpd]) {
       return res.status(400).send("requested user does not match any of the records in db");
