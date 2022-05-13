@@ -30,14 +30,21 @@ module.exports = {
 
   deleteUserById(req, res, next) {
     const idUserDel = req.params.id;
-    // check existence of user in table
     if (!db.Table_Users[idUserDel]) {
       return res.status(400).send("requested user does not match any of the records in db");
     }
     db.Table_Users.splice(idUserDel, 1);
     res.json({ message: `DELETED user with an id of ${idUserDel}` });
-  }
+  },
 
+  updateUserById(req, res, next) {
+    const idUserUpd = req.params.id;
+    if (!db.Table_Users[idUserUpd]) {
+      return res.status(400).send("requested user does not match any of the records in db");
+    }
+    db.Table_Users[idUserUpd] = req.body;
+    res.json(db.Table_Users[idUserUpd]);
+  }
 }
 
 /*

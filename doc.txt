@@ -15,12 +15,13 @@ Tasks
     create endpoints
         POST /users
             OK: create new record in Table_Users
-            createUserByUsername
+            validate received resource
             reject requests that has a username value that matches the username value of a record Table_Users
-        DELETE /users/:id
-            destroy a record in Table_Users that has an PK that matches the request parameter
+        OK: DELETE /users/:id
+            OK: destroy a record in Table_Users that has an PK that matches the request parameter
         PUT /users/:id
             update a record in Table_Users that has an PK that matches the request parameter, using the field values sent as request bodies
+            validate received resource
             make it idempotent
         manage version
               
