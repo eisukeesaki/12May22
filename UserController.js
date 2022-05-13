@@ -25,7 +25,7 @@ module.exports = {
       username: req.body.username
     };
     db.Table_Users.push(newUser);
-    res.json({ message: "CREATEd new user", user: db.Table_Users[idNewUser] });
+    res.json(db.Table_Users[idNewUser]);
   },
 
   deleteUserById(req, res) {
@@ -34,7 +34,7 @@ module.exports = {
       return res.status(400).send("requested user does not match any of the records in db");
     }
     db.Table_Users.splice(idUserDel, 1);
-    res.json({ message: `DELETED user with an id of ${idUserDel}` });
+    res.end();
   },
 
   updateUserById(req, res) {
