@@ -9,5 +9,6 @@ module.exports = {
   getUserById(req, res, next) {
     res.json(db.Table_Users[req.params.id]);
   }
+
 }
 
