@@ -15,13 +15,14 @@ Tasks
     create endpoints
         POST /users
             OK: create new record in Table_Users
-            reject requests that has a username value that matches a record in table
+            reject requests that has a username value that matches the username value of a record Table_Users
         DELETE /users/:id
             destroy a record in Table_Users that has an PK that matches the request parameter
         PUT /users/:id
             update a record in Table_Users that has an PK that matches the request parameter, using the field values sent as request bodies
             make it idempotent
-
+        manage version
+              
 OK: Tasks
     create RESTful API
     end points
