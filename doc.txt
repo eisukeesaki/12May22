@@ -1,0 +1,23 @@
+Assignment Day 3 (Express js Intro) 
+Following are the requirement for the assignment 1 
+1. Make a node project / 
+2. Create a Express server 
+3. You have to write two api’s for getting studentInfo 4. Create an hardcoded array in your app.js file 
+5. Write a get api to get the following data 
+  a. http://localhost:5000/students 
+    i. Return the list of hardcoded students 
+  b. http://localhost:5000/students/:id 
+  i. Return the requested student with the ID
+
+---
+
+Requirements
+    create RESTful API
+    end points
+        /students
+            return all students
+        /students/:id
+            return user by id
+    create as Node.js app
+    use Express.js
+
