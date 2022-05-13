@@ -19,6 +19,9 @@ module.exports = {
   },
 
   createUser(req, res) {
+    if (!req.body.username) {
+      return res.status(400).send({ message: "username not provided" });
+    }
     const idNewUser = db.Table_Users.length;
     const newUser = {
       id: idNewUser,
