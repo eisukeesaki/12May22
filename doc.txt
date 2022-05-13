@@ -23,6 +23,7 @@ Tasks
             update a record in Table_Users that has an PK that matches the request parameter, using the field values sent as request bodies
             validate received resource
             make it idempotent
+        squash all LSP warnings
         manage version
               
 OK: Tasks
