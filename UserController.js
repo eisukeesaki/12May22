@@ -22,13 +22,15 @@ module.exports = {
     if (!req.body.username) {
       return res.status(400).send({ message: "username not provided" });
     }
-    const idNewUser = db.Table_Users.length;
+    if (db.Table_Users.find(user => user.username == req.body.username)) {
+      return res.status(500).send("provided username is taken");
+    }
     const newUser = {
-      id: idNewUser,
+      id: db.Table_Users.length,
       username: req.body.username
     };
     db.Table_Users.push(newUser);
-    res.json(db.Table_Users[idNewUser]);
+    res.json(req.body);
   },
 
   deleteUserById(req, res) {

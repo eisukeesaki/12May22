@@ -20,9 +20,11 @@ Tasks
         OK: DELETE /users/:id
             OK: destroy a record in Table_Users that has an PK that matches the request parameter
         PUT /users/:id
-            update a record in Table_Users that has an PK that matches the request parameter, using the field values sent as request bodies
-            validate received resource
+            OK: update a record in Table_Users that has an PK that matches the request parameter, using the field values sent as request bodies
+            OK: validate received resource
             make it idempotent
+        all controller funcs
+            v = req.body
         squash all LSP warnings
         manage version
               
