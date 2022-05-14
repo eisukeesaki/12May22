@@ -16,17 +16,22 @@ Tasks
         POST /users
             OK: create new record in Table_Users
             OK: received resource
-            reject requests that has a username value that matches the username value of a record Table_Users
+            OK: reject requests that has a username value that matches the username value of a record Table_Users
         OK: DELETE /users/:id
             OK: destroy a record in Table_Users that has an PK that matches the request parameter
         PUT /users/:id
             OK: update a record in Table_Users that has an PK that matches the request parameter, using the field values sent as request bodies
             OK: validate received resource
-            make it idempotent
+            OK: verify idempotency
         all controller funcs
             v = req.body
-        squash all LSP warnings
         manage version
+        squash all LSP warnings
+
+Tasks_optional
+    performance
+    data integrity
+    security
               
 OK: Tasks
     create RESTful API

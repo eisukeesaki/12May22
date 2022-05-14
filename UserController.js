@@ -22,6 +22,7 @@ module.exports = {
     if (!req.body.username) {
       return res.status(400).send({ message: "username not provided" });
     }
+    // verify uniqueness of requested username
     if (db.Table_Users.find(user => user.username == req.body.username)) {
       return res.status(500).send("provided username is taken");
     }
