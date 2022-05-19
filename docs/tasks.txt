@@ -1,3 +1,16 @@
+tasks
+    code formatting
+        replace all `"` with `'` to match Sequelize's coding style
+
+OK: tasks
+    OK: db
+        OK: create .sql
+            OK: creates db ft_RESTfulAPI
+        OK: Sequelize
+            OK: connect to PostgreSQL server
+        OK: create table Users
+
+
 OK: tasks
     OK: end points
         /users

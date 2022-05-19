@@ -1,0 +1,4 @@
+enough reading the docs.
+    read library code
+    find examples (projects)
+    write code in clean project to experiment

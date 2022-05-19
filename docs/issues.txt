@@ -1,6 +1,14 @@
 raw issues
+    use DBMS to store UserModel data
+        PostgreSQL
+        psql
+        Sequelize
+            make Node server queriable
+            make Node server query db to create new User record upon POST /users
+        create db
+        create table Users
     testing
-        establish testing workflow
+        establish [efficient, rigorous] testing workflow
             Postman
     version control endpoints
 
