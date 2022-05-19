@@ -81,6 +81,8 @@ ORM
                     export as module
                         key-value pairs
                             read values from .env, write to process.env
+
+db interaction
     layers of abstraction
         low level
             database drivers
