@@ -1,10 +1,10 @@
 ## resources
-[PostgreSQL Process and Memory Architecture](https://www.interdb.jp/pg/pgsql02.html)
-[Sequelize documentation](https://sequelize.org/docs/v6/)
-[Sequelize API reference](https://sequelize.org/api/v7/index.html)
-[sequelize-cli](https://github.com/sequelize/cli)
-[database naming conventions](https://www.postgresql.org/docs/7.0/syntax525.htm)
-[node-postgres documentation](https://node-postgres.com/)
+- [PostgreSQL Process and Memory Architecture](https://www.interdb.jp/pg/pgsql02.html)
+- [Sequelize documentation](https://sequelize.org/docs/v6/)
+- [Sequelize API reference](https://sequelize.org/api/v7/index.html)
+- [sequelize-cli](https://github.com/sequelize/cli)
+- [database naming conventions](https://www.postgresql.org/docs/7.0/syntax525.htm)
+- [node-postgres documentation](https://node-postgres.com/)
 
 ## maps
 ```
